@@ -1,0 +1,334 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 0;
+}
+
+/* Home Page */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background: linear-gradient(135deg, #89fffd, #ef32d9);
+    color: white;
+    height: 100vh;
+}
+
+.hero-content {
+    max-width: 50%;
+    padding-right: 30px;
+}
+
+.hero-content h2 {
+    font-family: 'Brush Script MT', sans-serif;
+    font-size: 3em;
+    margin: 0 0 20px;
+    text-shadow: 
+        -1px -1px 0 #000,  /* Top left shadow */
+        1px -1px 0 #000,   /* Top right shadow */
+        -1px 1px 0 #000,   /* Bottom left shadow */
+        1px 1px 0 #000;    /* Bottom right shadow */
+    font-weight: 400;
+}
+
+.hero-content h1 {
+    font-family: 'CASTELLAR', sans-serif;
+    font-size: 4em;
+    margin: 0 0 20px;
+    text-shadow: 
+        -2px -2px 0 #000,  /* Top left shadow */
+        2px -2px 0 #000,   /* Top right shadow */
+        -2px 2px 0 #000,   /* Bottom left shadow */
+        2px 2px 0 #000;    /* Bottom right shadow */
+    font-weight: 400;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff4081;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #e91e63;
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    max-width: 45%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* About Page */
+.about-section {
+    text-align: center;
+    background-color: #F2688A;
+    color: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 60px auto;
+border: 15px solid #CA3767;
+}
+
+.about-section h1 {
+    font-family: 'ENGRAVERS MT', sans-serif;
+    text-shadow: 
+        -2px -2px 0 #000,  /* Top left shadow */
+        2px -2px 0 #000,   /* Top right shadow */
+        -2px 2px 0 #000,   /* Bottom left shadow */
+        2px 2px 0 #000;    /* Bottom right shadow */
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Skills Page */
+.skills-section {
+    text-align: center;
+    background-color: #81D8D0;
+    color: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 60px auto;
+border: 15px solid #1520A6;
+}
+
+.skills-section h1 {
+    font-family: 'ENGRAVERS MT', sans-serif;
+    text-shadow: 
+        -2px -2px 0 #000,  /* Top left shadow */
+        2px -2px 0 #000,   /* Top right shadow */
+        -2px 2px 0 #000,   /* Bottom left shadow */
+        2px 2px 0 #000;    /* Bottom right shadow */
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    color: #333;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50%; /* Makes the item circular */
+    width: 165px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   border: 5px solid #1520A6;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.skill-item p {
+    font-size: 1em;
+    text-align: center;
+    margin: 0;
+}
+
+/* Contact Page */
+.contact-section {
+    text-align: center;
+    background-color: #EFCC00;
+    color: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 140px auto;
+border: 15px solid #BC5602;
+}
+
+.contact-section h1 {
+    font-family: 'ENGRAVERS MT', sans-serif;
+    text-shadow: 
+        -2px -2px 0 #000,  /* Top left shadow */
+        2px -2px 0 #000,   /* Top right shadow */
+        -2px 2px 0 #000,   /* Bottom left shadow */
+        2px 2px 0 #000;    /* Bottom right shadow */
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-icon {
+    background-color: white;
+    color: #ff4081;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-icon:hover {
+    background-color: #e91e63;
+    color: white;
+}
+
+/* Education Page */
+.education-section {
+    text-align: center;
+    background-color: #BE93D4;
+    color: White;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 60px auto;
+border: 15px solid #710193;
+}
+
+.education-section h1 {
+    font-family: 'ENGRAVERS MT', sans-serif;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 
+        -2px -2px 0 #000,  /* Top left shadow */
+        2px -2px 0 #000,   /* Top right shadow */
+        -2px 2px 0 #000,   /* Bottom left shadow */
+        2px 2px 0 #000;    /* Bottom right shadow */
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.education-item {
+color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+border: 5px solid #710193;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.education-item h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    font-size: 1.1em;
+    margin: 0;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1em;
+}
+
+
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
